@@ -1,20 +1,79 @@
-*
-{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 html,
-body
-{
-    height: 100vh;
-    font-family: 'Poppins';
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: rgb(25, 25, 25);
 }
 
-.webgl
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    outline: none;
+body {
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  padding: 0 2rem 0 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.three {
+  height: 100px;
+  width: 100px;
+}
+
+.webgl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+  mix-blend-mode: exclusion;
+}
+
+.container {
+  z-index: 99;
+  height: 100vh;
+  display: grid;
+  position: absolute;
+  place-items: center;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+header {
+  grid-column: 2 / span 12;
+  padding: 2rem;
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  margin-bottom: 100rem;
+}
+
+h1 {
+  font-size: 8rem;
+  color: white;
+}
+
+header > h2 {
+  align-self: flex-end;
+  width: 20rem;
+  font-size: 7rem;
+}
+
+section {
+  grid-column: 2 / 8;
+  padding: 1rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
